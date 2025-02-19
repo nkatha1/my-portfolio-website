@@ -100,15 +100,40 @@
     }
 </style>
 
+<body class="bg-gray-50">
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 right-0 bg-gray-800 text-white p-4 z-10">
+        <div class="flex justify-between items-center">
+            <!-- Logo or Name -->
+            <a href="#home" class="text-2xl font-bold">Patience Nkatha</a>
+
+            <!-- Hamburger Icon (Mobile) -->
+            <button id="hamburger" class="block lg:hidden text-3xl">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <ul class="hidden lg:flex justify-center space-x-8 nav-links">
+                <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+                <li><a href="#about" class="hover:text-yellow-400">About Me</a></li>
+                <li><a href="#skills" class="hover:text-yellow-400">Skills</a></li>
+                <li><a href="#education" class="hover:text-yellow-400">Education</a></li>
+                <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
+                <li><a href="#certificates" class="hover:text-yellow-400">Certificates</a></li>
+                <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
 <div class="home-content text-center mt-20">
     <h1 class="text-4xl font-semibold">
-        <span class="typing-effect">Welcome to my Portfolio</span>
+        <span class="typing-effect">Hey welcome to my Portfolio</span>
     </h1>
     <p class="text-2xl mt-4">
-        <span class="text-xl font-bold">HELLO!!!    I'm </span>
+        <span class="text-xl font-bold">👋 HELLO!!! I'm </span>
         <span class="typing-effect">PATIENCE NKATHA</span>
         <img src="Peshy.jpg" alt="Peshy" class="w-20 h-20 object-cover mx-auto mb-4 transition-transform transform hover:scale-110">
-        <span class="typing-effect">Software Engineer | Junior Data Analyst | AI & Data Enthusiast | Full Stack Developer</span>
+        <span class="typing-effect">Software Engineer  | Junior Data Analyst | AI & Tech Enthusiast | Full Stack Developer |</span>
     </p>
 </div>
 
@@ -415,15 +440,35 @@
 </section>
 
 <script>
-    // Mobile Menu Toggle
-    document.getElementById('menu-toggle')?.addEventListener('click', function() {
-        const navLinks = document.getElementById('nav-links');
-        if (navLinks) {
-            navLinks.classList.toggle('hidden');
-        }
-    });
-</script>
-
-<!-- Add your closing body and html tags here -->
-</body>
-</html>
+    <!-- Mobile Menu Toggle Script -->
+    <script>
+        document.getElementById('menu-toggle')?.addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            if (navLinks) {
+                navLinks.classList.toggle('hidden');
+            }
+        });
+    </script>
+    
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white py-8 mt-20">
+        <div class="container mx-auto text-center">
+            <div class="mb-4">
+                <p class="text-xl font-semibold">@Patience Nkatha. All rights reserved.</p>
+            </div>
+            <div class="flex justify-center space-x-6">
+                <!-- Social Media Links -->
+                <a href="https://www.linkedin.com/in/patience-nkatha-a27027279/" target="_blank" class="text-xl hover:text-yellow-400">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/nkatha1" target="_blank" class="text-xl hover:text-yellow-400">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Closing the body and html tags -->
+    </body>
+    </html>
+    
